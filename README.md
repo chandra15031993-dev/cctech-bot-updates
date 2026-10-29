@@ -1,42 +1,37 @@
-# CC AI BOT updates
+# CC AI BOT - full standalone office PC
 
-Signed Windows and Android update downloads for CC AI BOT by CCTech IT Solutions. This repository distributes release packages; it does not contain personal trading databases, broker credentials, pairing vaults or private signing keys.
+## Download the current setup
 
-## Current release
+- [Full Windows desktop setup 10.8.3](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CCTech-AI-Bot-Setup-10.8.3.exe)
+- [Android app 2.5](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-2.5.apk)
+- [Installation manual (PDF)](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-Installation-and-User-Manual.pdf)
+- [Office installation instructions (Notepad)](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/READ-ME-FULL-OFFICE-PC.txt)
+- [Current release and integrity files](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/tag/updates)
 
-Windows **10.8.1** / Android **2.4** (Android version code 15).
+## Install on the office PC
 
-[Open downloads and release notes](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/tag/updates)
+Close the old Office Client, run **10.8.3** in its existing installation directory, then launch the **CC AI BOT desktop shortcut**. This installer always selects the full standalone Host, including upgrades from the limited Office Client. It runs the complete desktop terminal and OpenAlgo server on the office PC. The old/home PC does not need to remain online.
 
-## Set up Settings updates once
+The full desktop interface includes Scanner, Positions & Orders, Markets, Market Pulse, AI Agents, Options, Research and Settings. Python, Tk and application dependencies are bundled for Windows 10/11 64-bit. Fresh accounts start in DEMO without broker credentials. Set up your own broker IDs and local OpenAlgo API key, and verify Analyzer before real-money use. Existing local data is preserved. Advanced setup and broker authorisation require your account configuration.
 
-Copy this exact address into the update settings of older installations:
+Android 2.5 includes dedicated Market Trend and AI Agent screens, sector breadth, price trends, candidate reasons and independent scan/entry controls. Pair it using a **new link from the office PC's Settings > Mobile app**. Private remote access requires that office host's companion/Tailscale configuration. The office PC runs the engine and must stay awake while trading. Phone lane startup supports confirmed Analyzer execution; LIVE startup and advanced AI provider/policy configuration remain on the desktop.
+
+## Settings update address
 
 ```text
 https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/release.manifest
 ```
 
-- **PC:** Settings > Help > Software updates & office setup. Paste and save the address, check for updates, then download the verified installer. Close the host/client and use Stop idle host server for update before installing. Do not interrupt open trades or remove protective orders to force an update.
-- **Android:** Settings > Updates > Check Android software updates. Paste the address if blank, check/download, then choose Install verified download. Install over the existing production app to preserve pairing. Android may ask for installation permission and confirmation.
+The new packages have this address preset. Older PC installations can save it in Settings > Help > Software updates & office setup; Android uses Settings > Updates. Check, download and confirm installation. PC upgrades require closing the desktop/client and stopping the verified idle owned server first. No update automatically starts trading.
 
-The update address is preset in Windows 10.8.1 and Android 2.4. Future release packages must still be built, signed and published before Check for updates can discover them. Updates are not silently installed and do not start trading automatically.
+The updater verifies the pinned RSA/SHA-256 manifest signature, artifact size and SHA-256. Android also requires its existing signing identity. The Windows installer has no Authenticode publisher certificate. Direct-download hashes are in SHA256SUMS.txt.
 
-## Direct installation
+## Moving accounts and protecting data
 
-- [Windows installer 10.8.1](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CCTech-AI-Bot-Setup-10.8.1.exe) — Windows 10/11 x64.
-- [Android APK 2.4](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-2.4.apk) — Android 8 or newer.
-- [SHA-256 checksums](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/SHA256SUMS.txt).
+The public packages contain application code and the desktop dock arrangement. They do not contain personal broker credentials, account databases, pairing vaults or private signing keys. Enter your own IDs on the office PC. Optional encrypted backup/restore is available separately for private history.
 
-On an office PC, choose **Office client — shared existing host** and pair it with the existing trading host. Keep one active trading host for the account. Do not share a live SQLite database through a cloud-sync folder. The full installer includes its private Python runtime and dependencies; the office PC does not need developer SDKs.
+Cloud Drive/OneDrive/Dropbox folders are for backups, not a shared live database. Stop entries and review positions/orders on the old host before moving an account to the office PC. Re-pair Android with the office host.
 
-## Verification
+## Future releases
 
-The updater verifies the pinned RSA/SHA-256 signature on release.manifest and then the package hash and size. Android also checks the installed package's signing identity. The Android signing identity is retained from 2.3. The Windows installer does not have a Windows Authenticode publisher certificate; signed update metadata is a separate verification mechanism.
-
-## Changes in this release
-
-Independent Scanner, Market Pulse and AI Agent discovery controls; source-labelled, expiring Almost Ready handoffs; all seven supported exchange choices; shared position, budget and entry-risk checks; preset signed update feed. An eligible signal is not a guarantee of profit.
-
-## Publishing later versions
-
-Preserve the existing private release-signing key and Android keystore outside this repository. Increment the Windows version and Android version code, rebuild and verify both packages, upload the new packages to the editable `updates` release, and replace the signed release.manifest last. Keep older packages available so cached manifests still resolve. Never publish credentials, databases or private signing material.
+Keep the existing update-signing and Android signing keys private. Build both artifacts, verify them, upload them to the stable **updates** release, then replace release.manifest last. Keep the stable feed address unchanged. Older versioned assets may remain for history; use the current versions linked above.
