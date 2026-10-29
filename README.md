@@ -2,19 +2,27 @@
 
 ## Download the current setup
 
-- [Full Windows desktop setup 10.8.3](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CCTech-AI-Bot-Setup-10.8.3.exe)
-- [Android app 2.5](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-2.5.apk)
+- [Full Windows desktop setup 10.8.4](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CCTech-AI-Bot-Setup-10.8.4.exe)
+- [Android app 2.6](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-2.6.apk)
 - [Installation manual (PDF)](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/CC-AI-BOT-Installation-and-User-Manual.pdf)
 - [Office installation instructions (Notepad)](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/READ-ME-FULL-OFFICE-PC.txt)
 - [Current release and integrity files](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/tag/updates)
 
+## Scanner watchlists
+
+PC and Android now show Universe, Priority, Almost ready, AI Agent, Market Trend, READY, Ready History and News. Android Review is removed; swipe the scanner tab strip horizontally. Priority uses bounded rotating 30-second price-action rechecks and shows checked age. Qualified source plans use the normal Scanner confirmation path; source admission does not bypass out-of-sample edge, data or risk gates. Weak, invalid and expired plans disappear; READY candidates leave the pre-READY tabs.
+
+Start each source scan in its new Scanner tab and run the main Scanner for full promotion into READY. Entry arming remains separate. Identical symbol/exchange candidates merge for confirmation, preserving both source names. Opposing directions are withheld when both directions are selected. Different venues/contracts remain distinct and shared pending/position protections remain in force.
+
+[Detailed watchlist instructions](https://github.com/chandra15031993-dev/cctech-bot-updates/releases/download/updates/Scanner-Watchlists-10.8.4.txt)
+
 ## Install on the office PC
 
-Close the old Office Client, run **10.8.3** in its existing installation directory, then launch the **CC AI BOT desktop shortcut**. This installer always selects the full standalone Host, including upgrades from the limited Office Client. It runs the complete desktop terminal and OpenAlgo server on the office PC. The old/home PC does not need to remain online.
+Close the old Office Client, run **10.8.4** in its existing installation directory, then launch the **CC AI BOT desktop shortcut**. This installer always selects the full standalone Host, including upgrades from the limited Office Client. It runs the complete desktop terminal and OpenAlgo server on the office PC. The old/home PC does not need to remain online.
 
 The full desktop interface includes Scanner, Positions & Orders, Markets, Market Pulse, AI Agents, Options, Research and Settings. Python, Tk and application dependencies are bundled for Windows 10/11 64-bit. Fresh accounts start in DEMO without broker credentials. Set up your own broker IDs and local OpenAlgo API key, and verify Analyzer before real-money use. Existing local data is preserved. Advanced setup and broker authorisation require your account configuration.
 
-Android 2.5 includes dedicated Market Trend and AI Agent screens, sector breadth, price trends, candidate reasons and independent scan/entry controls. Pair it using a **new link from the office PC's Settings > Mobile app**. Private remote access requires that office host's companion/Tailscale configuration. The office PC runs the engine and must stay awake while trading. Phone lane startup supports confirmed Analyzer execution; LIVE startup and advanced AI provider/policy configuration remain on the desktop.
+Android 2.6 includes dedicated Market Trend and AI Agent screens, sector breadth, price trends, candidate reasons and independent scan/entry controls. Pair it using a **new link from the office PC's Settings > Mobile app**. Private remote access requires that office host's companion/Tailscale configuration. The office PC runs the engine and must stay awake while trading. Phone lane startup supports confirmed Analyzer execution; LIVE startup and advanced AI provider/policy configuration remain on the desktop.
 
 ## Settings update address
 
